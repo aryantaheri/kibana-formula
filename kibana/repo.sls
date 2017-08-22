@@ -4,10 +4,10 @@
 kibana-repo:
   pkgrepo.managed:
     - humanname: Kibana Repo
-    - name: deb http://packages.elastic.co/kibana/{{kibana.repoVersion}}/debian stable main
+    - name: deb https://artifacts.elastic.co/packages/5.x/apt stable main
     - file: /etc/apt/sources.list.d/kibana.list
     - gpgcheck: 1
-    - key_url: https://packages.elastic.co/GPG-KEY-elasticsearch
+    - key_url: https://artifacts.elastic.co/GPG-KEY-elasticsearch
     - require_in:
       - pkg: kibana
     - clean_file: true
